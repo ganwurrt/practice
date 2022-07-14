@@ -5,8 +5,7 @@ function re(reg, str) {
     body = body.replace(reg, str);
 }
 
-var reg1 = /ipsubexp=/g;
-var reg2 = /ipsub=\d/g;
-re(reg1, 'ipsubexp=1646033923');
-re(reg2, 'ipsub=1');
+var reg1 = /true/g;
+re(reg1, 'false');
+console.log('处理后body---'+body)
 $done(body);
